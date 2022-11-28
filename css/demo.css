@@ -161,17 +161,16 @@ main {
 	padding: 4em 10% 2em;
 }
 
-.content__title,
-.content__subtitle {
-	font-family: "Lato", sans-serif;
-}
 
 .content__title {
+	color: #28282f;
+	font-family: "Lato", sans-serif;
 	font-size: 3em;
 	margin: 0;
 }
 
 .content__subtitle {
+	font-family: "Lato", sans-serif;
 	font-size: 2em;
 	font-weight: normal;
 	margin: 0.25em 0 0;
@@ -182,6 +181,7 @@ main {
 	font-size: 1.175em;
 	line-height: 1.6;
 	margin: 1.5em 0;
+	color: #9f9da7;
 }
 
 p.margin-paragraph {
