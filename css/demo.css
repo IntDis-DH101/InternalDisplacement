@@ -163,7 +163,7 @@ main {
 
 
 .content__title {
-	color: #28282f;
+	color: #777777;
 	font-family: "Lato", sans-serif;
 	font-size: 3em;
 	margin: 0;
@@ -181,7 +181,7 @@ main {
 	font-size: 1.175em;
 	line-height: 1.6;
 	margin: 1.5em 0;
-	color: #9f9da7;
+	color: #777777;
 }
 
 p.margin-paragraph {
