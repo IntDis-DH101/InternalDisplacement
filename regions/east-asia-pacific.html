@@ -5,6 +5,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ <!--- Navbar Style-->
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body {font-family: "Lato", sans-serif;}
 h1, h2, h3, h4, h5, h6 {
@@ -17,14 +21,27 @@ h1, h2, h3, h4, h5, h6 {
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
-  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
-    <a href="#home" class="w3-bar-item w3-button">Gourmet au Catering</a>
-    <!-- Right-sided navbar links. Hide them on small screens -->
-    <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">About</a>
-      <a href="#menu" class="w3-bar-item w3-button">Menu</a>
-      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-    </div>
+  <div class="w3-bar" id="myNavbar" navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="https://intdis-dh101.github.io/InternalDisplacement/index.html" class="w3-bar-item w3-button" color="#000000">HOME</a>
+    <a href="https://intdis-dh101.github.io/InternalDisplacement/global.html" class="w3-bar-item w3-button w3-hide-small"></i>GLOBAL</a>
+    <a href="https://intdis-dh101.github.io/InternalDisplacement/regions.html" class="w3-bar-item w3-button w3-hide-small"></i>REGIONS</a>
+    <a href="https://intdis-dh101.github.io/InternalDisplacement/conclusion.html" class="w3-bar-item w3-button w3-hide-small"></i>CONCLUSION</a>
+    <a href="https://intdis-dh101.github.io/InternalDisplacement/about.html" class="w3-bar-item w3-button w3-hide-small"></i>ABOUT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="https://intdis-dh101.github.io/InternalDisplacement/global.html" class="w3-bar-item w3-button" onclick="toggleFunction()">GLOBAL</a>
+    <a href="https://intdis-dh101.github.io/InternalDisplacement/regions.html" class="w3-bar-item w3-button" onclick="toggleFunction()">REGIONS</a>
+    <a href="https://intdis-dh101.github.io/InternalDisplacement/conclusion.htm" class="w3-bar-item w3-button" onclick="toggleFunction()">CONCLUSION</a>
+    <a href="https://intdis-dh101.github.io/InternalDisplacement/about.html" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
   </div>
 </div>
 
