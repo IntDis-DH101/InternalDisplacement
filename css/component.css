@@ -4,7 +4,7 @@
 	overflow: hidden;
 	width: 100%;
 	margin-bottom: -0.4em;
-	background: #2596be;
+	background: #cfced7;
 }
 
 .interactive-points:focus {
@@ -109,7 +109,7 @@
 }
 
 .point-tooltip__title {
-	font-family: "Lato", sans-serif;
+	font-family: 'Source Serif Pro', serif;
 	font-size: 1.5em;
 	line-height: 1;
 	margin: 0 0 0.15em;
@@ -162,14 +162,14 @@
 }
 
 .point-content__title {
-	font-family: "Lato", sans-serif;
+	font-family: 'Source Serif Pro', serif;
 	font-size: 2.25em;
 	margin: 0;
 	text-shadow: 0 1px 5px rgba(0,0,0,0.2);
 }
 
 .point-content__subtitle {
-	font-family: "Lato", sans-serif;
+	font-family: 'Source Serif Pro', serif;
 	font-weight: bold;
 	margin: 0.25em 0 0;
 	display: inline-block;
@@ -254,3 +254,5 @@
 		transform: translate3d(0,0,0);
 	}
 }
+
+
