@@ -36,7 +36,6 @@ body, html {
 
 			
 			</header>
-	<main>
 	<!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar" id="myNavbar" navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white">
@@ -150,7 +149,7 @@ function myFunction() {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
     } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
     }
 }
 
