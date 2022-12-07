@@ -177,6 +177,7 @@
 	color: #28282f;
 	padding: 0 10px;
 	line-height: 1.5;
+	pointer-events:auto;
 }
 
 .point-content__text {
