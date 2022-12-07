@@ -353,21 +353,26 @@
 					// Hide tooltip.
 					self.tooltips[pos].classList.remove('point-tooltip--current');
 				},
-				onClick : function() {
-					self.currentPoint = pos;
-					lunar.removeClass(self.points[pos].el, 'point--active');
-					// Hide the current point (and all other points).
-					self._pointsAction('hide');
-					// Hide tooltip.
-					self.tooltips[pos].classList.remove('point-tooltip--current');
-					// Stop mousemove event on Points.
-					self._pointsAction('pause');
-					// Show Point´s bgEl.
-					self.points[pos].bgEl.style.opacity = 1;
-					// Show content.
-					self.pointsContentWrapper.classList.add('points-content--open');
-					self.contents[pos].classList.add('point-content--current');
-				}
+				// onClick : function() {
+				// 	self.currentPoint = pos;
+				// 	lunar.removeClass(self.points[pos].el, 'point--active');
+					
+				// 	mena_elem = document.getElementById("menalink")
+				// 	href = "https://intdis-dh101.github.io/InternalDisplacement/regions/middle-east.html";
+
+				// 	// Hide the current point (and all other points).
+				// 	self._pointsAction('hide');
+				// 	// Hide tooltip.
+				// 	self.tooltips[pos].classList.remove('point-tooltip--current');
+				// 	// Stop mousemove event on Points.
+				// 	self._pointsAction('pause');
+				// 	// Show Point´s bgEl.
+				// 	self.points[pos].bgEl.style.opacity = 1;
+				// 	// Show content.
+				// 	self.pointsContentWrapper.classList.add('points-content--open');
+				// 	self.pointsContentWrapper.classList.add('mena')
+				// 	self.contents[pos].classList.add('point-content--current');
+				// }
 			});
 			self.points.push(p);
 		});	
