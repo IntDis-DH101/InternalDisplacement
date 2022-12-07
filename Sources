@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+.mySlides {display:none}
+.w3-tag, .fa {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="https://intdis-dh101.github.io/InternalDisplacement/index.html" class="w3-bar-item w3-button">HOME</a>
+    <a href="https://intdis-dh101.github.io/InternalDisplacement/global.html" class="w3-bar-item w3-button w3-hide-small"></i>GLOBAL</a>
+    <a href="https://intdis-dh101.github.io/InternalDisplacement/regions.html" class="w3-bar-item w3-button w3-hide-small"></i>REGIONS</a>
+    <a href="https://intdis-dh101.github.io/InternalDisplacement/conclusion.html" class="w3-bar-item w3-button w3-hide-small"></i>CONCLUSION</a>
+    <a href="https://intdis-dh101.github.io/InternalDisplacement/about.html" class="w3-bar-item w3-button w3-hide-small"></i>ABOUT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="https://intdis-dh101.github.io/InternalDisplacement/global.html" class="w3-bar-item w3-button" onclick="toggleFunction()">GLOBAL</a>
+    <a href="https://intdis-dh101.github.io/InternalDisplacement/regions.html" class="w3-bar-item w3-button" onclick="toggleFunction()">REGIONS</a>
+    <a href="https://intdis-dh101.github.io/InternalDisplacement/conclusion.html" class="w3-bar-item w3-button" onclick="toggleFunction()">CONCLUSION</a>
+    <a href="https://intdis-dh101.github.io/InternalDisplacement/about.html" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- Content -->
+<div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
+
+  <div class="w3-panel">
+    <h1><b>Sources</b></h1>
+    <p>Our Data Set, Data Critique, and Annotated Bibliography</p>
+  </div>
+ 
+  
+  <!--Data  -->
+  <div class="w3-center w3-padding-64" id="contact">
+    <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Data Set</span>
+  </div>
+
+ <p>Our data set was provided by th Internal Displacement Monitoring Centre (IDMC) and can be downloaded <a href="https://www.internal-displacement.org/sites/default/files/IDMC_IDI_values_2020%20final.xlsx">here.</a></p>
+ 
+ 
+ <!-- Data Critique-->
+   <div class="w3-center w3-padding-64" id="contact">
+    <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Data Critique</span>
+  </div>
+
+ <p> Put data critique here here </p>
+
+</div>
+
+  <!-- Annotated Bib -->
+  <div class="w3-center w3-padding-64" id="contact">
+    <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Annotated Bibliography</span>
+  </div>
+
+ <p>Anotated Bibliography here</p>
+
+</div>
+
+
+<script>
+
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demodots");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+  
+  // Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+  
+</script>
+
+</body>
+</html>
