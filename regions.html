@@ -13,36 +13,30 @@
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
-		<!--- Navbar Style-->
+		<!--[if IE]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ <!--- Navbar Style-->
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body,h1,h2,h3,h4,h5,h6,{font-family: "Lato", sans-serif;
-	color:#717885;
-	}
-body, html {
-  height: 100%;
-  line-height: 1.8;
-	background-color="white";
+body {font-family: "Lato", sans-serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Lato";
 }
-		</style>
-		<!--[if IE]>
-  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-	</head>
-	<body>
-		
+</style>
+</head>
+<body>
 
-
-	<!-- Navbar (sit on top) -->
+<!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar" id="myNavbar" navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white">
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
     <a href="https://intdis-dh101.github.io/InternalDisplacement/index.html" class="w3-bar-item w3-button" color="#000000">HOME</a>
-    <a href="https://intdis-dh101.github.io/InternalDisplacement/global.html" class="w3-bar-item w3-button w3-hide-small"></i>GLOBAL</a>
     <a href="https://intdis-dh101.github.io/InternalDisplacement/regions.html" class="w3-bar-item w3-button w3-hide-small"></i>REGIONS</a>
     <a href="https://intdis-dh101.github.io/InternalDisplacement/conclusion.html" class="w3-bar-item w3-button w3-hide-small"></i>CONCLUSION</a>
     <a href="https://intdis-dh101.github.io/InternalDisplacement/about.html" class="w3-bar-item w3-button w3-hide-small"></i>ABOUT</a>
@@ -53,20 +47,21 @@ body, html {
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="https://intdis-dh101.github.io/InternalDisplacement/global.html" class="w3-bar-item w3-button" onclick="toggleFunction()">GLOBAL</a>
     <a href="https://intdis-dh101.github.io/InternalDisplacement/regions.html" class="w3-bar-item w3-button" onclick="toggleFunction()">REGIONS</a>
     <a href="https://intdis-dh101.github.io/InternalDisplacement/conclusion.htm" class="w3-bar-item w3-button" onclick="toggleFunction()">CONCLUSION</a>
     <a href="https://intdis-dh101.github.io/InternalDisplacement/about.html" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
     <a href="#" class="w3-bar-item w3-button">SEARCH</a>
   </div>
 </div>
+
+		<main>
 			<p class="message">Please view this demo on a larger screen.</p>
 			<section class="interactive-points" id="interactive-1" tabindex="0">
 				<img class="static" src="img/worldmap-1.jpg" alt="Map of World" />
 				<div class="backgrounds">
-					<div class="background__element" style="background-image: url(mena/mena.jpg)"></div>
-					<div class="background__element" style="background-image: url(sa/southasia.jpg)"></div>
-					<div class="background__element" style="background-image: url(eap/myanmar.jpg)"></div>
+					<div class="background__element" style="background-image: url(regions/mena/mena.jpg)"></div>
+					<div class="background__element" style="background-image: url(regions/sa/southasia.jpg)"></div>
+					<div class="background__element" style="background-image: url(regions/eap/myanmar.jpg)"></div>
 				</div>
 <svg class="points" viewBox="0 0 1885 1080" width="100%" height="100%">
 					<path class="point" d="M1069.3,449.7L1069.3,449.7c-7.1-7.1-18.6-7.1-25.7,0l0,0c-6.4,6.4-7.1,18.4-1.7,25.7l14.5,21l14.5-21C1076.4,468.2,1075.7,456.1,1069.3,449.7z"/><!--MENA-->
@@ -74,25 +69,43 @@ body, html {
 					<path class="point" d="M1573.5,514L1573.5,514c-7.1-7.1-18.6-7.1-25.7,0l0,0c-6.4,6.4-7.1,18.4-1.7,25.7l14.5,21l14.5-21C1580.6,532.5,1579.9,520.4,1573.5,514z"/><!--EAP-->
 				</svg>
 				<div class="points-tooltips">
-					<div class="point-tooltip"><h2 class="point-tooltip__title">Rupert Street</h2><br><p class="point-tooltip__description">The connection to London Bridge that no one knew about</p></div>
-					<div class="point-tooltip"><h2 class="point-tooltip__title">Swiss Court</h2><br><p class="point-tooltip__description">The crazy story of a rebel</p></div>
-					<div class="point-tooltip"><h2 class="point-tooltip__title">Bear Street</h2><br><p class="point-tooltip__description">Hidden gems and stories</p></div>
+					<div class="point-tooltip"><h2 class="point-tooltip__title">Middle East</h2><br><p class="point-tooltip__description">The connection to London Bridge that no one knew about</p></div>
+					<div class="point-tooltip"><h2 class="point-tooltip__title">South Asia</h2><br><p class="point-tooltip__description">The crazy story of a rebel</p></div>
+					<div class="point-tooltip"><h2 class="point-tooltip__title">East Asia & Pacific</h2><br><p class="point-tooltip__description">Hidden gems and stories</p></div>
+					<div class="point-tooltip"><h2 class="point-tooltip__title">Leicester Square</h2><br><p class="point-tooltip__description">A never ending love story</p></div>
+					<div class="point-tooltip"><h2 class="point-tooltip__title">Oxendon Street</h2><br><p class="point-tooltip__description">No need to panik, rescue is close</p></div>
+					<div class="point-tooltip"><h2 class="point-tooltip__title">Haymarket</h2><br><p class="point-tooltip__description">Adventures to be discovered</p></div>
 				</div>
 				<div class="points-content">
 					<div class="point-content">
-						<h3 class="point-content__title">The Rupert Connection</h3>
-						<p class="point-content__subtitle">24<sup>th</sup> of February, 1927</p>
+						<h3 class="point-content__title">The Middle East & North Africa</h3>
+						<p class="point-content__subtitle"><a href="https://intdis-dh101.github.io/InternalDisplacement/regions/middle-east.html" class="w3-bar-item w3-button w3-hide-small">A CLOSER LOOK</a></p>
 						<p class="point-content__text">Descended from astronomers encyclopaedia galactica from which we spring worldlets intelligent beings gathered by gravity billions.</p>
 					</div>
 					<div class="point-content">
-						<h3 class="point-content__title">Swiss Court, Miss</h3>
+						<h3 class="point-content__title">South Asia</h3>
 						<p class="point-content__subtitle">3<sup>rd</sup> of March, 1928</p>
 						<p class="point-content__text">Hydrogen atoms circumnavigated Cambrian explosion, a mote of dust suspended in a sunbeam Hypatia.</p>
 					</div>
 					<div class="point-content">
-						<h3 class="point-content__title">Hiding in Bear Street</h3>
+						<h3 class="point-content__title">East Asia & Pacific</h3>
 						<p class="point-content__subtitle">19<sup>th</sup> of July, 1927</p>
 						<p class="point-content__text">From which we spring the ash of stellar alchemy from which we spring emerged into consciousness, great turbulent clouds rich in heavy atoms. </p>
+					</div>
+					<div class="point-content">
+						<h3 class="point-content__title">Leicester Square Love</h3>
+						<p class="point-content__subtitle">12<sup>th</sup> of August, 1930</p>
+						<p class="point-content__text">A mote of dust suspended in a sunbeam are creatures of the cosmos decipherment, Orion's sword corpus callosum galaxies shores of the cosmic ocean.</p>
+					</div>
+					<div class="point-content">
+						<h3 class="point-content__title">Oxendon of Oxes</h3>
+						<p class="point-content__subtitle">26<sup>th</sup> of March, 1927</p>
+						<p class="point-content__text">Extraplanetary concept of the number one vanquish the impossible culture trillion the sky calls to us.</p>
+					</div>
+					<div class="point-content">
+						<h3 class="point-content__title">Haymarket Forever</h3>
+						<p class="point-content__subtitle">14<sup>th</sup> of January, 1927</p>
+						<p class="point-content__text">Birth, are creatures of the cosmos Cambrian explosion colonies great turbulent clouds cosmos are creatures of the cosmos! Great turbulent clouds.</p>
 					</div>
 				</div>
 				<a class="pater" href="https://goo.gl/VqOfus" rel="nofollow">
@@ -110,13 +123,16 @@ body, html {
 				<div class="content__inner">
 					<h2 class="content__title">A Humanistic Investigation</h2> 
 					<h3 class="content__subtitle">We used IDMC data to study the following questions:</h3>
-					<p>What characteristics result in higher index scores, and how does this play into the country's ability to cope with it's internally displaced people? <br><br> How does the economic impact of internal displacement affect the socioeconomic development indicator of a nation and thus the lives of its citizens?<br><br> What characteristics have affected the internally displaced people in the Global South countries?</p>
-					<p class="margin-paragraph"><strong>Use the map below or above to take a closer look at the regions we studied.</strong></p>
+					<p>1. What characteristics result in higher index scores, and how does this play into the country's ability to cope with its internally displaced people?<br><br>
+
+2. How does the economic impact of internal displacement affect the socioeconomic development indicator of a nation and thus the lives of its citizens?<br><br>
+
+3. What characteristics have affected the internally displaced people in the Global South countries?
+</p>
+					<p class="margin-paragraph"><strong>Use the map above or below to learn about internal displacement within each region</strong></p>
 				</div>
 			</section>
-
 		
-			
 		</main>
 		<script src="js/lunar.js"></script>
 		<script src="js/imagesloaded.pkgd.min.js"></script>
@@ -128,10 +144,10 @@ body, html {
 				// Maximum opacity that the background element of a Point can have when the point is active (mouse gets closer to it).
 				maxOpacityOnActive : 1,
 				// When the mouse is [activeOn]px away from one point, its image gets opacity = point.options.maxOpacity.
-				activeOn : 100
+				activeOn : 90
 			});
 		})();
- 
+</script>
 <script>
 // Modal Image Gallery
 function onClick(element) {
@@ -148,7 +164,7 @@ function myFunction() {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
     } else {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
     }
 }
 
@@ -161,7 +177,6 @@ function toggleFunction() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
-</script>
-
-</body>
+		</script>
+	</body>
 </html>
