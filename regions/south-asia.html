@@ -178,8 +178,9 @@ h1, h2, h3, h4, h5, h6 {
     <span class="close">&times;</span>
     <iframe src="https://drive.google.com/file/d/1j1R2Ue0FJGjBC-N5Gu4MC_SVugmHLLsP/preview" width="640" height="480" allow="autoplay"></iframe>
   </div>
+	<main>
 <section class="interactive-points" id="interactive-1" tabindex="0">
-				<img class="static" src="img/worldmap-1.jpg" alt="Map of World" />
+				<img class="static" src="sa/worldmap-1.jpg" alt="Map of World" />
 				<div class="backgrounds">
 					<div class="background__element" style="background-image: url(regions/mena/mena.jpg)"></div>
 					<div class="background__element" style="background-image: url(regions/sa/southasia.jpg)"></div>
@@ -240,6 +241,21 @@ h1, h2, h3, h4, h5, h6 {
   
 <!-- End page content -->
 </div>
+	</main>
+	<script src="js/lunar.js"></script>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/main.js"></script>
+		<script>
+		(function() {
+			new PointsMap(document.querySelector('#interactive-1'));
+			new PointsMap(document.querySelector('#interactive-2'), {
+				// Maximum opacity that the background element of a Point can have when the point is active (mouse gets closer to it).
+				maxOpacityOnActive : 1,
+				// When the mouse is [activeOn]px away from one point, its image gets opacity = point.options.maxOpacity.
+				activeOn : 90
+			});
+		})();
+</script>
 <script>
 // Change style of navbar on scroll
 window.onscroll = function() {myFunction()};
