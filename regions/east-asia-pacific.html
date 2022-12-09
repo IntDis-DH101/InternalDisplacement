@@ -117,7 +117,7 @@ h1, h2, h3, h4, h5, h6 {
     <h1 class="w3-xxlarge" style="color:#fff">East Asia & Pacific</h1>
   </div>
 </header>
-
+<main>
 <!-- Page content -->
 <div class="w3-content" style="max-width:1100px">
 
@@ -193,6 +193,21 @@ h1, h2, h3, h4, h5, h6 {
 
 </div>
 <!--Modal HTML end-->
+	</main>
+			<script src="js/lunar.js"></script>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/main.js"></script>
+		<script>
+		(function() {
+			new PointsMap(document.querySelector('#interactive-1'));
+			new PointsMap(document.querySelector('#interactive-2'), {
+				// Maximum opacity that the background element of a Point can have when the point is active (mouse gets closer to it).
+				maxOpacityOnActive : 1,
+				// When the mouse is [activeOn]px away from one point, its image gets opacity = point.options.maxOpacity.
+				activeOn : 90
+			});
+		})();
+</script>
 <script>
 // Change style of navbar on scroll
 window.onscroll = function() {myFunction()};
